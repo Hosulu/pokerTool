@@ -221,6 +221,9 @@
     //清除牌面，將牌面清除重新開始
     function clearPoker(){
       $('.selectArea li').remove();
+      $('.selClick').each(function( index, element ){
+        $(element).attr('class',"selItem");
+      })
     }
 
     //移除選取的項目
