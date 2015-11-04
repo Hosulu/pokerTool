@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="Big5">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    pad_width = <span id="pad_width"></span><br/>
+    pad_height = <span id="pad_height"></span><br/>
+    pad_customerId = <span id="pad_customerId"></span><br/>
+    pad_positionId = <span id="pad_positionId"></span><br/>
+    pad_page = <span id="pad_page"></span><br/>
+    pad_keyword = <span id="pad_keyword"></span><br/>
+    pad_precise = <span id="pad_precise"></span><br/>
+</div>
+
+<script language="javascript">
+    pad_width=478;
+    pad_height=115;
+    pad_customerId="PFBC20150519001";
+    pad_positionId="PFBP201506290003S";
+    pad_page="1";
+    pad_keyword="iPad%20Air2";
+    pad_precise=true;
+</script>
+<script id="pcadscript" language="javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>
+<script type="text/javascript">
+    $('document').ready(function(){
+        $('#pad_width').text(pad_width);
+        $('#pad_height').text(pad_height);
+        $('#pad_customerId').text(pad_customerId);
+        $('#pad_positionId').text(pad_positionId);
+        $('#pad_page').text(pad_page);
+        $('#pad_keyword').text(pad_keyword);
+        $('#pad_precise').text(pad_precise);
+    });
+</script>
+</body>
+</html>
