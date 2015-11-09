@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="Big5">
+<html lang="UTF-8">
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <div>
@@ -14,20 +14,51 @@
     pad_page = <span id="pad_page"></span><br/>
     pad_keyword = <span id="pad_keyword"></span><br/>
     pad_precise = <span id="pad_precise"></span><br/>
+    count = <span id="cnt"></span>
 </div>
-
+<div>
+<span>11111</span>
 <script language="javascript">
-    pad_width=478;
-    pad_height=115;
+    pad_width=300;
+    pad_height=250;
     pad_customerId="PFBC20150519001";
-    pad_positionId="PFBP201506290003S";
-    pad_page="1";
-    pad_keyword="iPad%20Air2";
-    pad_precise=true;
+    pad_positionId="PFBP201505200003";
 </script>
 <script id="pcadscript" language="javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>
+</div>
+<div>
+<span>22222</span>
+<script language="javascript">
+    pad_width=300;
+    pad_height=250;
+    pad_customerId="PFBC20150519001";
+    pad_positionId="PFBP201505200003";
+</script>
+<script id="pcadscript" language="javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>
+</div>
+<div>
+<span>33333</span>
+<script language="javascript">
+    pad_width=300;
+    pad_height=250;
+    pad_customerId="PFBC20150519001";
+    pad_positionId="PFBP201505200003";
+</script>
+<script id="pcadscript" language="javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>
+</div>
+<div>
+<span>44444</span>
+<script language="javascript">
+    pad_width=300;
+    pad_height=250;
+    pad_customerId="PFBC20150519001";
+    pad_positionId="PFBP201505200003";
+</script>
+<script id="pcadscript" language="javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>
+</div>
 <script type="text/javascript">
-    $('document').ready(function(){
+    loopCnt="1";
+    $('document').ready(function () {
         $('#pad_width').text(pad_width);
         $('#pad_height').text(pad_height);
         $('#pad_customerId').text(pad_customerId);
@@ -35,7 +66,17 @@
         $('#pad_page').text(pad_page);
         $('#pad_keyword').text(pad_keyword);
         $('#pad_precise').text(pad_precise);
+
+        var cnt = loopCnt;
+
+        for (var i = 0; i < cnt; i++) {
+            $('#cnt').text($('#cnt').text() + " [" + i + "] ");
+        }
     });
 </script>
+<!--<script type="text/javascript" src="http://kdpic.pchome.com.tw/img/js/xpcadshow.js"></script>-->
+<!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+<span>QQQQQ</span>
+
 </body>
 </html>
