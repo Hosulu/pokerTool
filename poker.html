@@ -9,13 +9,27 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css">
     <style>
-        #sortable { list-style-type: none; margin: 0; padding: 0; width: 170px; }
-        #sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 50px; height: 80px; font-size: 4em; text-align: center; }
+        #sortable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 170px;
+        }
+
+        #sortable li {
+            margin: 3px 3px 3px 0;
+            padding: 1px;
+            float: left;
+            width: 50px;
+            height: 80px;
+            font-size: 4em;
+            text-align: center;
+        }
     </style>
     <script>
-        $(function() {
-            $( "#sortable" ).sortable();
-            $( "#sortable" ).disableSelection();
+        $(function () {
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
         });
     </script>
     <style type="text/css">
@@ -88,64 +102,68 @@
     </tr>
     <tr>
         <td style="vertical-align: top;text-align: center"><a class="color_bk">♠</a>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_A')">A</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_2')">2</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_3')">3</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_4')">4</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_5')">5</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_6')">6</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_7')">7</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_8')">8</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_9')">9</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_10')">10</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_J')">J</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_Q')">Q</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('1_K')">K</a></div>
+
+            <div class="selItem" onclick="addToSelect('1_A')"><a class="color_bk">A</a></div>
+            <div class="selItem" onclick="addToSelect('1_2')"><a class="color_bk">2</a></div>
+            <div class="selItem" onclick="addToSelect('1_3')"><a class="color_bk">3</a></div>
+            <div class="selItem" onclick="addToSelect('1_4')"><a class="color_bk">4</a></div>
+            <div class="selItem" onclick="addToSelect('1_5')"><a class="color_bk">5</a></div>
+            <div class="selItem" onclick="addToSelect('1_6')"><a class="color_bk">6</a></div>
+            <div class="selItem" onclick="addToSelect('1_7')"><a class="color_bk">7</a></div>
+            <div class="selItem" onclick="addToSelect('1_8')"><a class="color_bk">8</a></div>
+            <div class="selItem" onclick="addToSelect('1_9')"><a class="color_bk">9</a></div>
+            <div class="selItem" onclick="addToSelect('1_10')"><a class="color_bk">10</a></div>
+            <div class="selItem" onclick="addToSelect('1_J')"><a class="color_bk">J</a></div>
+            <div class="selItem" onclick="addToSelect('1_Q')"><a class="color_bk">Q</a></div>
+            <div class="selItem" onclick="addToSelect('1_K')"><a class="color_bk">K</a></div>
         </td>
         <td style="vertical-align: top;text-align: center"><a class="color_rd">♥</a>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_A')">A</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_2')">2</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_3')">3</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_4')">4</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_5')">5</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_6')">6</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_7')">7</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_8')">8</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_9')">9</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_10')">10</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_J')">J</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_Q')">Q</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('2_K')">K</a></div>
+
+            <div class="selItem" onclick="addToSelect('2_A')"><a class="color_rd">A</a></div>
+            <div class="selItem" onclick="addToSelect('2_2')"><a class="color_rd">2</a></div>
+            <div class="selItem" onclick="addToSelect('2_3')"><a class="color_rd">3</a></div>
+            <div class="selItem" onclick="addToSelect('2_4')"><a class="color_rd">4</a></div>
+            <div class="selItem" onclick="addToSelect('2_5')"><a class="color_rd">5</a></div>
+            <div class="selItem" onclick="addToSelect('2_6')"><a class="color_rd">6</a></div>
+            <div class="selItem" onclick="addToSelect('2_7')"><a class="color_rd">7</a></div>
+            <div class="selItem" onclick="addToSelect('2_8')"><a class="color_rd">8</a></div>
+            <div class="selItem" onclick="addToSelect('2_9')"><a class="color_rd">9</a></div>
+            <div class="selItem" onclick="addToSelect('2_10')"><a class="color_rd">10</a></div>
+            <div class="selItem" onclick="addToSelect('2_J')"><a class="color_rd">J</a></div>
+            <div class="selItem" onclick="addToSelect('2_Q')"><a class="color_rd">Q</a></div>
+            <div class="selItem" onclick="addToSelect('2_K')"><a class="color_rd">K</a></div>
         </td>
         <td style="vertical-align: top;text-align: center"><a class="color_rd">♦</a>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_A')">A</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_2')">2</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_3')">3</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_4')">4</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_5')">5</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_6')">6</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_7')">7</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_8')">8</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_9')">9</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_10')">10</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_J')">J</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_Q')">Q</a></div>
-            <div class="selItem"><a class="color_rd" onclick="addToSelect('3_K')">K</a></div>
+
+            <div class="selItem" onclick="addToSelect('3_A')"><a class="color_rd">A</a></div>
+            <div class="selItem" onclick="addToSelect('3_2')"><a class="color_rd">2</a></div>
+            <div class="selItem" onclick="addToSelect('3_3')"><a class="color_rd">3</a></div>
+            <div class="selItem" onclick="addToSelect('3_4')"><a class="color_rd">4</a></div>
+            <div class="selItem" onclick="addToSelect('3_5')"><a class="color_rd">5</a></div>
+            <div class="selItem" onclick="addToSelect('3_6')"><a class="color_rd">6</a></div>
+            <div class="selItem" onclick="addToSelect('3_7')"><a class="color_rd">7</a></div>
+            <div class="selItem" onclick="addToSelect('3_8')"><a class="color_rd">8</a></div>
+            <div class="selItem" onclick="addToSelect('3_9')"><a class="color_rd">9</a></div>
+            <div class="selItem" onclick="addToSelect('3_10')"><a class="color_rd">10</a></div>
+            <div class="selItem" onclick="addToSelect('3_J')"><a class="color_rd">J</a></div>
+            <div class="selItem" onclick="addToSelect('3_Q')"><a class="color_rd">Q</a></div>
+            <div class="selItem" onclick="addToSelect('3_K')"><a class="color_rd">K</a></div>
         </td>
         <td style="vertical-align: top;text-align: center"><a class="color_bk">♣</a>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_A')">A</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_2')">2</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_3')">3</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_4')">4</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_5')">5</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_6')">6</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_7')">7</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_8')">8</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_9')">9</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_10')">10</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_J')">J</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_Q')">Q</a></div>
-            <div class="selItem"><a class="color_bk" onclick="addToSelect('4_K')">K</a></div>
+
+            <div class="selItem" onclick="addToSelect('4_A')"><a class="color_bk">A</a></div>
+            <div class="selItem" onclick="addToSelect('4_2')"><a class="color_bk">2</a></div>
+            <div class="selItem" onclick="addToSelect('4_3')"><a class="color_bk">3</a></div>
+            <div class="selItem" onclick="addToSelect('4_4')"><a class="color_bk">4</a></div>
+            <div class="selItem" onclick="addToSelect('4_5')"><a class="color_bk">5</a></div>
+            <div class="selItem" onclick="addToSelect('4_6')"><a class="color_bk">6</a></div>
+            <div class="selItem" onclick="addToSelect('4_7')"><a class="color_bk">7</a></div>
+            <div class="selItem" onclick="addToSelect('4_8')"><a class="color_bk">8</a></div>
+            <div class="selItem" onclick="addToSelect('4_9')"><a class="color_bk">9</a></div>
+            <div class="selItem" onclick="addToSelect('4_10')"><a class="color_bk">10</a></div>
+            <div class="selItem" onclick="addToSelect('4_J')"><a class="color_bk">J</a></div>
+            <div class="selItem" onclick="addToSelect('4_Q')"><a class="color_bk">Q</a></div>
+            <div class="selItem" onclick="addToSelect('4_K')"><a class="color_bk">K</a></div>
         </td>
     </tr>
 </table>
@@ -170,7 +188,7 @@
         $(this).remove();
     });
 
-//    將選取的項目新增到選取區
+    //    將選取的項目新增到選取區
     function addToSelect(selVal) {
         var chkType = false;
         var chkNum = false;
