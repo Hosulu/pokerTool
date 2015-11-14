@@ -1,0 +1,79 @@
+body {
+    /* 一般都會選擇 small 或 medium為主大小；
+       small約 12px; medium 約 14px;
+    */
+    font-size: medium;
+}
+
+
+/*定義選取區的樣式*/
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+}
+
+/*定義選取項目的樣式*/
+#sortable li {
+    margin: 3px 3px 3px 0;
+    padding: 1px;
+    float: left;
+    width: 50px;
+    /*height: 90px;*/
+    font-size: 2em;
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul {
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+    background-color: #EEE;
+}
+
+li {
+    margin: 5px 5px 0 0;
+    display: inline-block;
+    width: 50px;
+    /*height: 80px;*/
+    background-color: #F3CDA1;
+}
+
+/*點選項目的色系*/
+.click {
+    background-color: #999;
+}
+
+.selClick {
+    /*display: inline;*/
+    background-color: #999;
+    text-align: center;
+}
+
+.selItem {
+    /*display: inline;*/
+    text-align: center;;
+}
+
+.poker {
+    font-size: 100%;
+    text-align: center;
+}
+
+/*項目的預設顏色*/
+.color_bk {
+    font-size: 200%;
+    color: black;
+}
+
+.color_rd {
+    font-size: 200%;
+    color: red;
+}
